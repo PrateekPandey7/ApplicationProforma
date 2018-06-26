@@ -49,6 +49,10 @@
 									<td><input type = "date" name = "dob" required></input></td>
 								</tr>
 								<tr>
+									<th>Gender<span style="color:red">  *</span></th>
+									<td><select id = "gender"><option value = "Male">Male</option><option value = "Female">Female</option></select></td>
+								</tr>
+								<tr>
 									<th>Address</th>
 									<td><textarea name = "address" placeholder = "Street Address, Apartment/Building"></textarea></td>
 								</tr>
@@ -91,7 +95,7 @@
 			                  <th>Qualification</th>
 			                  <th width = "4">Year</th>
 			                  <th>Institution</th>
-			                  <th>Marks Obtained(Percentage)</th>
+			                  <th>Marks Obtained(in Percentage)</th>
 			                  <th>Remarks</th>
 			                </thead>
 			                <tbody>
@@ -262,8 +266,8 @@
 		        
 		        <fieldset>
 			        <div class = "divison">
-			        	<div class = "h"><label><h3>ANY OTHER INFORMATION (Give Details) :</h3></label></div><input type = "textarea" id = "skill" name = "details"></input>
-			        	<div class = "h"><label><h3>SELECT THE DIVISON INTERESTED TO WORK WITH: (Maximum 3) <span style="color:red">  *</span></h3></label></div>
+			        	<div class = "h"><label><h3>ANY OTHER INFORMATION (Give Details) </h3></label></div><input type = "textarea" id = "skill" name = "details"></input>
+			        	<div class = "h"><label><h3>SELECT THE DIVISON INTERESTED TO WORK WITH (Maximum 3) <span style="color:red">  *</span></h3></label></div>
 			        	<div class = "fr1">
 			        		<input type="checkbox" class = "sc" name="check_list[]" value="Agribusiness Division">Agribusiness Division<br/>
 							<input type="checkbox" class = "sc" name="check_list[]" value="Energy Management">Energy Management<br/>
@@ -288,9 +292,9 @@
 			        	<div>
 			        	</br></br>
 			        	</div>
-			        	<div class = "h"><label><h3>SELECT THE LOCATION INTERESTED TO WORK AT: (Maximum 3) <span style="color:red">  *</span></h3></label></div>
+			        	<div class = "h"><label><h3>SELECT THE LOCATION INTERESTED TO WORK AT (Maximum 3) <span style="color:red">  *</span></h3></label></div>
 			        	<div class = "fr1">
-			        		<input type="checkbox" class = "c" name="check_list1[]" value="Bangalore">Bangalore<br/>
+			        		<input type="checkbox" class = "c" name="check_list1[]" value="Bengaluru">Bengaluru<br/>
 			        		<input type="checkbox" class = "c" name="check_list1[]" value="Gandhinagar">Gandhinagar<br/>
 							<input type="checkbox" class = "c" name="check_list1[]" value="Kolkata">Kolkata<br/>
 						</div>
@@ -300,7 +304,7 @@
 							<input type="checkbox" class = "c" name="check_list1[]" value="Mumbai">Mumbai<br/>
 						</div>
 						<div class = "fr3">
-							<input type="checkbox" class = "c" name="check_list1[]" value="Bangalore">Bangalore<br/>
+							<input type="checkbox" class = "c" name="check_list1[]" value="Chandigarh">Chandigarh<br/>
 							<input type="checkbox" class = "c" name="check_list1[]" value="Hyderabad">Hyderabad<br/>
 			        		<input type="checkbox" class = "c" name="check_list1[]" value="Patna">Patna<br/>
 						</div>
@@ -318,27 +322,27 @@
 		    <!--<fieldset>-->
 				<div id = "terms" class = "terms">
 					<div class = "t"><label><h3>TERMS & CONDITIONS</h3></label></div>
-					<p>1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Application Porforma titled at <strong>"Application for Empanelment of Consultants, Experts & Trainers"</strong> that is available on NPC website on or before Jan 31/ July 31.</p>
-					<p>2. The Application recieved online shall be treated as signed application by the applicant.</p>
-					<p>3. Any false statement in the application shall be taken extremely seriously and will liable applicant to rejection and legal action.</p>
-					<p>4. No documents need to be attached to the application. Documents shall be verified at the time of interview, if required.</p>
-					<p>5. This is <strong>NOT</strong> an offer for permanent employment in NPC and is purely a contractual engagement on project basis on mutually agreed terms and conditions.</p>
-					<p>6. The engagement <strong>DOES NOT</strong> confirm any right to the engaged consultant/expert/trainer to any position or job in NPC or any other wing of the Government on any preference in employment after the tenure of engagement or anytime in future.</p>
-					<p>7. NPC reserves its right <strong>NOT TO ENGAGE</strong> any consultant/expert/trainer in response to the advertisement and this is only an invitation to apply for engagement. NPC shall not be liable for any action taken by any person in response to this Rolling Advertisement.</p>
-					<p>8. All the applications shall be screened for qualification and completeness. Complete applications shall be sorted and shortlisted for calling suitable candidates for interview. <strong>Not all applicants will be called for interview</strong>.</p>
-					<p>9. Selection of the candidates shall be made on the basis of interviews taken by a selection committee. Only short listed candidates shall be invited for the interview.</p>
-					<p>10. The Applicant will be offered a contractual engagement on project basis as per availability and as per mutually agreed terms and conditions.</p>
-					<p>11. The selected candidate is expected to maintain highest standards of behaviour and show politeness in dealings with NPC or its clients's officials during or after the termination of the engagement with NPC.</p>
-					<p>12. The candidate will undertake & execute the assigned tasks with all sincerity and as per communicated timelines. The failure in commitments and duty by the candidate will be viewed seriously and his engagement/empanelment will be terminated and <strong>NO FURTHER PROJECT ENGAGEMENTS WILL BE OFFERED</strong></p>
-					<p>13. After the culmination of tenure/project engagement, if the engaged consultant/expert/trainer is found to be involved in demeaning the brand/image of NPC, <strong>a legal action will be taken against him and he will be blacklisted from offering his services to NPC</strong>.</p>
-					<p>14. The candidate will carry his own laptop to undertake the assigned tasks whereas other facilities like internet, printing etc will be provided while working at NPC premises.</p>
-					<p>15. The applicants are advised to provide e-mail address for communication of interview call and selection & no communication will be made by post, the candidates are advised to regularly check the provided email as well as NPC website.</p>
-					<p>16. The candidate should be willing to work at any location as the projects are based on client specific locations.</p> 
+					<p class = "hangingindent">1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Application Porforma titled at <strong>"Application for Empanelment of Consultants, Experts & Trainers"</strong> that is available on NPC website on or before Jan 31/ July 31.</p>
+					<p class = "hangingindent">2. The Application recieved online shall be treated as signed application by the applicant.</p>
+					<p class = "hangingindent">3. Any false statement in the application shall be taken extremely seriously and will liable applicant to rejection and legal action.</p>
+					<p class = "hangingindent">4. No documents need to be attached to the application. Documents shall be verified at the time of interview, if required.</p>
+					<p class = "hangingindent">5. This is <strong>NOT</strong> an offer for permanent employment in NPC and is purely a contractual engagement on project basis on mutually agreed terms and conditions.</p>
+					<p class = "hangingindent">6. The engagement <strong>DOES NOT</strong> confirm any right to the engaged consultant/expert/trainer to any position or job in NPC or any other wing of the Government on any preference in employment after the tenure of engagement or anytime in future.</p>
+					<p class = "hangingindent">7. NPC reserves its right <strong>NOT TO ENGAGE</strong> any consultant/expert/trainer in response to the advertisement and this is only an invitation to apply for engagement. NPC shall not be liable for any action taken by any person in response to this Rolling Advertisement.</p>
+					<p class = "hangingindent">8. All the applications shall be screened for qualification and completeness. Complete applications shall be sorted and shortlisted for calling suitable candidates for interview. <strong>Not all applicants will be called for interview</strong>.</p>
+					<p class = "hangingindent">9. Selection of the candidates shall be made on the basis of interviews taken by a selection committee. Only short listed candidates shall be invited for the interview.</p>
+					<p class = "hangingindent2">10. The Applicant will be offered a contractual engagement on project basis as per availability and as per mutually agreed terms and conditions.</p>
+					<p class = "hangingindent2">11. The selected candidate is expected to maintain highest standards of behaviour and show politeness in dealings with NPC or its clients's officials during or after the termination of the engagement with NPC.</p>
+					<p class = "hangingindent2">12. The candidate will undertake & execute the assigned tasks with all sincerity and as per communicated timelines. The failure in commitments and duty by the candidate will be viewed seriously and his engagement/empanelment will be terminated and <strong>NO FURTHER PROJECT ENGAGEMENTS WILL BE OFFERED</strong></p>
+					<p class = "hangingindent2">13. After the culmination of tenure/project engagement, if the engaged consultant/expert/trainer is found to be involved in demeaning the brand/image of NPC, <strong>a legal action will be taken against him and he will be blacklisted from offering his services to NPC</strong>.</p>
+					<p class = "hangingindent2">14. The candidate will carry his own laptop to undertake the assigned tasks whereas other facilities like internet, printing etc will be provided while working at NPC premises.</p>
+					<p class = "hangingindent2">15. The applicants are advised to provide e-mail address for communication of interview call and selection & no communication will be made by post, the candidates are advised to regularly check the provided email as well as NPC website.</p>
+					<p class = "hangingindent2">16. The candidate should be willing to work at any location as the projects are based on client specific locations.</p> 
 
 					<div class = "accept">
 						</br>
 						</br>
-						<input type="checkbox" name="accept" value="accept" required> I <span id="myname"></span> son/daughter of <span id="myfname"></span> hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.<br>
+						<p class = "hangingindent1"><input type="checkbox" name="accept" value="accept" required>I <span id="myname"></span> <span id ="mygender"></span> of <span id="myfname"></span> hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.<br></p>
 						Date: &nbsp;&nbsp;&nbsp; <input type = "date" name = "date" required></input>
 						</br>
 						Place: &nbsp;&nbsp;&nbsp; <input name = "place" required></input>
@@ -369,6 +373,13 @@
 
     	document.getElementById("myfname").innerHTML = val; 
     }
+    function mygender(val)
+    {
+    	if(val == 'Male' || val == 'male')
+    		document.getElementById("mygender").innerHTML = 'son';
+    	if(val == 'Female' || val == 'female')
+    		document.getElementById("mygender").innerHTML = "daughter";
+    }
     </script>
 	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
@@ -383,16 +394,17 @@
 	        	if (cnt < 1) 
 	        	{
 	            	$(this).prop("checked", "");
-	            	alert('You need atleast ' + limit + ' Division');
+	            	alert('You need to select atleast ' + limit + ' Division to work with');
 	        	}
 	        	else if(cnt1 < 1)
 	        	{
 	        		$(this).prop("checked", "");
-	            	alert('You need atleast ' + limit + ' Location');
+	            	alert('You need to select atleast ' + limit + ' Location to work at');
 	        	}
 	        	else
 	        	{
 	        		$(".terms").show();
+	        		mygender( document.getElementById("gender").value);
 		   			$("#tc").hide();
 	        	}		
 			});
