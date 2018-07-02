@@ -50,7 +50,7 @@
 								</tr>
 								<tr>
 									<th>Gender<span style="color:red">  *</span></th>
-									<td><select id = "gender"><option value = "Male">Male</option><option value = "Female">Female</option></select></td>
+									<td><select id = "gender"><option value = "Male">Male</option><option value = "Female">Female</option><option value = "Others">Others</option></select></td>
 								</tr>
 								<tr>
 									<th>Address</th>
@@ -322,7 +322,7 @@
 		    <!--<fieldset>-->
 				<div id = "terms" class = "terms">
 					<div class = "t"><label><h3>TERMS & CONDITIONS</h3></label></div>
-					<p class = "hangingindent">1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Application Porforma titled at <strong>"Application for Empanelment of Consultants, Experts & Trainers"</strong> that is available on NPC website on or before Jan 31/ July 31.</p>
+					<p class = "hangingindent">1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Application Porforma titled at <strong>"Application Proforma for Empanelment of Consultants, Experts & Trainers"</strong> that is available on NPC website on or before Jan 31/ July 31.</p>
 					<p class = "hangingindent">2. The Application recieved online shall be treated as signed application by the applicant.</p>
 					<p class = "hangingindent">3. Any false statement in the application shall be taken extremely seriously and will liable applicant to rejection and legal action.</p>
 					<p class = "hangingindent">4. No documents need to be attached to the application. Documents shall be verified at the time of interview, if required.</p>
@@ -379,6 +379,8 @@
     		document.getElementById("mygender").innerHTML = 'son';
     	if(val == 'Female' || val == 'female')
     		document.getElementById("mygender").innerHTML = "daughter";
+    	if(val == 'Others')
+    		document.getElementById("mygender").innerHTML = "son/daughter";
     }
     </script>
 	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
