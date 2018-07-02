@@ -18,9 +18,9 @@
 
     $zip->close();
 
-    header('Content-Type: application/zip');
-    header("Content-Disposition: attachment; filename= $zipname");
-    header('Content-Length: ' . filesize($zipname));
+   header('Content-Type: application/zip');
+    //header('Content-Length: ' . filesize($zipname));
+    //header("Content-Disposition: attachment; filename= $zipname");
     header("Location: $zipname");
 
 ?>
