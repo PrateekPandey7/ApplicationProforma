@@ -2,7 +2,7 @@
 
 $error = '';
 $name = '';$fname = '';$dob = '';$address = '';$city = '';$state = '';$pincode = '';$contact = '';$email = '';$mobile = '';$heducation = '';$education1 = '';$education2 = '';$education3 = '';$education4 = '';$education5 = '';$experience1 = '';$experience2 = '';$experience3 = '';$experience4 = '';$experience5 = '';$publications1 = '';
-$publications2 = '';$publications3 = '';$publications4 = '';$publications5 = '';$computer = '';$date = '';$place = '';$division = '';$location = '';$skills = '';$totalexperience = '';$details = '';
+$publications2 = '';$publications3 = '';$publications4 = '';$publications5 = '';$computer = '';$date = '';$place = '';$division = '';$location = '';$skills = '';$totalexperience = '';$details = '';$nationality = '';
 function clean_text($string)
 {
   $string = trim($string);
@@ -180,6 +180,10 @@ if(isset($_POST["submit"]))
     {
       $place = clean_text($_POST["place"]);
     }
+    if(!empty($_POST["nationality"]))
+    {
+      $nationality = clean_text($_POST["nationality"]);
+    }
 
 
 
@@ -210,6 +214,7 @@ if(isset($_POST["submit"]))
 			'sr_no' => $no_rows1,
 			'name' => $name,
 			'fname' => $fname,
+      'nationality' => $nationality,
 			'dob' => $dob,
 			'address' => $address,
 			'city' => $city,

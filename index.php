@@ -22,6 +22,7 @@
 			<p class = "heading1"><strong>National Productivity Council</strong><p>
 			<p class = "subh1">(Under Department of Industrial Policy & Promotion Ministry of Commerce & Industry, Govt. of India)</p>
 			<strong><p class = "heading2">APPLICATION PROFORMA FOR EMPANELMENT OF CONSULTANTS, EXPERTS & TRAINERS</p></strong>
+			<p>No. HQ/HRM/S02/2017-18</p>
 			
 		</div>
 
@@ -43,6 +44,10 @@
 								<tr>
 									<th>Father's Name<span style="color:red">  *</span></th>
 									<td><input id = "fname" name = "fname" onkeyup="myfname(this.value)" required></input></td>
+								</tr>
+								<tr>
+									<th>Nationality<span style="color:red">  *</span></th>
+									<td><input id = "nationality" name = "nationality" required></input></td>
 								</tr>
 								<tr>
 									<th>Date of Birth<span style="color:red">  *</span></th>
@@ -322,26 +327,26 @@
 		    <!--<fieldset>-->
 				<div id = "terms" class = "terms">
 					<div class = "t"><label><h3>TERMS & CONDITIONS</h3></label></div>
-					<p class = "hangingindent">1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Application Porforma titled at <strong>"Application Proforma for Empanelment of Consultants, Experts & Trainers"</strong> that is available on NPC website on or before Jan 31/ July 31.</p>
-					<p class = "hangingindent">2. The Application recieved online shall be treated as signed application by the applicant.</p>
-					<p class = "hangingindent">3. Any false statement in the application shall be taken extremely seriously and will liable applicant to rejection and legal action.</p>
-					<p class = "hangingindent">4. No documents need to be attached to the application. Documents shall be verified at the time of interview, if required.</p>
-					<p class = "hangingindent">5. This is <strong>NOT</strong> an offer for permanent employment in NPC and is purely a contractual engagement on project basis on mutually agreed terms and conditions.</p>
-					<p class = "hangingindent">6. The engagement <strong>DOES NOT</strong> confirm any right to the engaged consultant/expert/trainer to any position or job in NPC or any other wing of the Government on any preference in employment after the tenure of engagement or anytime in future.</p>
-					<p class = "hangingindent">7. NPC reserves its right <strong>NOT TO ENGAGE</strong> any consultant/expert/trainer in response to the advertisement and this is only an invitation to apply for engagement. NPC shall not be liable for any action taken by any person in response to this Rolling Advertisement.</p>
-					<p class = "hangingindent">8. All the applications shall be screened for qualification and completeness. Complete applications shall be sorted and shortlisted for calling suitable candidates for interview. <strong>Not all applicants will be called for interview</strong>.</p>
-					<p class = "hangingindent">9. Selection of the candidates shall be made on the basis of interviews taken by a selection committee. Only short listed candidates shall be invited for the interview.</p>
-					<p class = "hangingindent2">10. The Applicant will be offered a contractual engagement on project basis as per availability and as per mutually agreed terms and conditions.</p>
-					<p class = "hangingindent2">11. The selected candidate is expected to maintain highest standards of behaviour and show politeness in dealings with NPC or its clients's officials during or after the termination of the engagement with NPC.</p>
-					<p class = "hangingindent2">12. The candidate will undertake & execute the assigned tasks with all sincerity and as per communicated timelines. The failure in commitments and duty by the candidate will be viewed seriously and his engagement/empanelment will be terminated and <strong>NO FURTHER PROJECT ENGAGEMENTS WILL BE OFFERED</strong></p>
-					<p class = "hangingindent2">13. After the culmination of tenure/project engagement, if the engaged consultant/expert/trainer is found to be involved in demeaning the brand/image of NPC, <strong>a legal action will be taken against him and he will be blacklisted from offering his services to NPC</strong>.</p>
-					<p class = "hangingindent2">14. The candidate will carry his own laptop to undertake the assigned tasks whereas other facilities like internet, printing etc will be provided while working at NPC premises.</p>
-					<p class = "hangingindent2">15. The applicants are advised to provide e-mail address for communication of interview call and selection & no communication will be made by post, the candidates are advised to regularly check the provided email as well as NPC website.</p>
-					<p class = "hangingindent2">16. The candidate should be willing to work at any location as the projects are based on client specific locations.</p> 
+					<p class = "hangingindent">1. The Applicants fulfilling eligibility criteria may submit their complete details in the prescribed Online Application Proforma titled as <strong>"Application Proforma for Empanelment of Consultants, Experts & Trainers"</strong> on or before Jan 31/ July 31, that is available on NPC website .</p>
+					<p class = "hangingindent">2. Any false statement in the application shall be taken extremely seriously and will liable applicant to rejection and legal action.</p>
+					<p class = "hangingindent">3. No documents need to be attached to the application. Documents shall be verified at the time of interview, if required.</p>
+					<p class = "hangingindent">4. This is <strong>NOT</strong> an offer for permanent employment in NPC and is purely a contractual engagement on project basis on mutually agreed terms and conditions.</p>
+					<p class = "hangingindent">5. The engagement <strong>DOES NOT</strong> confirm any right to the engaged consultant/expert/trainer to any position or job in NPC or any other wing of the Government on any preference in employment after the tenure of engagement or anytime in future.</p>
+					<p class = "hangingindent">6. NPC reserves its right <strong>NOT TO ENGAGE</strong> any consultant/expert/trainer in response to the advertisement and this is only an invitation to apply for engagement. NPC shall not be liable for any action taken by any person in response to this Rolling Advertisement.</p>
+					<p class = "hangingindent">7. All the applications shall be screened for qualification and completeness. Complete applications shall be sorted and shortlisted for calling suitable candidates for interview. <strong>Not all applicants will be called for interview</strong>.</p>
+					<p class = "hangingindent">8. Selection of the candidates shall be made on the basis of interviews taken by a selection committee. Only short listed candidates shall be invited for the interview.</p>
+					<p class = "hangingindent">9. The Applicant will be offered a contractual engagement on project basis as per availability and as per mutually agreed terms and conditions.</p>
+					<p class = "hangingindent2">10. The selected candidate is expected to maintain highest standards of behaviour and show politeness in dealings with NPC or its clients's officials during or after the termination of the engagement with NPC.</p>
+					<p class = "hangingindent2">11. The candidate will undertake & execute the assigned tasks with all sincerity and as per communicated timelines. The failure in commitments and duty by the candidate will be viewed seriously and his engagement/empanelment will be terminated and <strong>NO FURTHER PROJECT ENGAGEMENTS WILL BE OFFERED</strong></p>
+					<p class = "hangingindent2">12. After the culmination of tenure/project engagement, if the engaged consultant/expert/trainer is found to be involved in demeaning the brand/image of NPC, <strong>a legal action will be taken against him and he will be blacklisted from offering his services to NPC</strong> and it will be displayed on NPC website.</p>
+					<p class = "hangingindent2">13. The candidate will carry his own laptop to undertake the assigned tasks whereas other facilities like internet, printing etc will be provided while working at NPC premises.</p>
+					<p class = "hangingindent2">14. The applicants are advised to provide e-mail address for communication of interview call and selection & no communication will be made by post, the candidates are advised to regularly check the provided email as well as NPC website.</p>
+					<p class = "hangingindent2">15. The candidate should be willing to work at any location as the projects are based on client specific locations.</p> 
 
 					<div class = "accept">
 						</br>
 						</br>
+						<p class = "hangingindent1"><input type="checkbox" name="accept" value="accept" required>I <span id="myname"></span> <span id ="mygender"></span> of <span id="myfname"></span> hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to these terms and conditions.<br></p>
 						Place: &nbsp;&nbsp;&nbsp; <input name = "place" required></input>
 						<div class = "form-group button">
 		            		<center><input type="submit" id = "submit" class = "btn btn-primary" name = "submit" value = "Submit"></center>
