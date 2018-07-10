@@ -74,6 +74,17 @@ fieldset
 	margin-left: 80px;
 }
 
+.divisiondetails
+{
+	margin-left: 80px;
+	margin-bottom: -30px;
+}
+
+.locationdetails
+{
+	margin-left: 80px;
+}
+
 body
 {
 	 background-color: white;
@@ -85,7 +96,7 @@ form
 	font-family: 'Cambria', sans-serif;
 }
 
-table
+#personaldetails
 {
 	margin-bottom: 20px;
 }
@@ -111,6 +122,14 @@ input[type = "checkbox"]
 {
 	background-color: #000037;
 	height: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.hh
+{
+	background-color: #000037;
+	height: 60px;
 	text-align: center;
 	margin-bottom: 20px;
 }

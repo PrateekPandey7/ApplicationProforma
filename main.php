@@ -2,7 +2,7 @@
 
 $error = '';
 $name = '';$fname = '';$dob = '';$address = '';$city = '';$state = '';$pincode = '';$contact = '';$email = '';$mobile = '';$heducation = '';$education1 = '';$education2 = '';$education3 = '';$education4 = '';$education5 = '';$experience1 = '';$experience2 = '';$experience3 = '';$experience4 = '';$experience5 = '';$publications1 = '';
-$publications2 = '';$publications3 = '';$publications4 = '';$publications5 = '';$computer = '';$date = '';$place = '';$division = '';$location = '';$skills = '';$totalexperience = '';$details = '';$nationality = '';
+$publications2 = '';$publications3 = '';$publications4 = '';$publications5 = '';$computer = '';$date = '';$place = '';$division = '';$location = '';$skills = '';$totalexperience = '';$details = '';$nationality = '';$div1 = '';$div2 = '';$div3 = '';$loc1 = '';$loc2 = '';$loc3 = '';
 function clean_text($string)
 {
   $string = trim($string);
@@ -175,6 +175,31 @@ if(isset($_POST["submit"]))
       $date = clean_text($_POST["date"]);
     }*/
     $date = date("Y/m/d");
+    if(!empty($_POST["div1"]))
+    {
+      $div1 = clean_text($_POST["div1"]);
+    }
+    if(!empty($_POST["div2"]))
+    {
+      $div2 = clean_text($_POST["div2"]);
+    }
+    if(!empty($_POST["div3"]))
+    {
+      $div3 = clean_text($_POST["div3"]);
+    }
+
+    if(!empty($_POST["loc1"]))
+    {
+      $loc1 = clean_text($_POST["loc1"]);
+    }
+    if(!empty($_POST["loc2"]))
+    {
+      $loc2 = clean_text($_POST["loc2"]);
+    }
+    if(!empty($_POST["loc3"]))
+    {
+      $loc3 = clean_text($_POST["loc3"]);
+    }
 
     if(!empty($_POST["place"]))
     {

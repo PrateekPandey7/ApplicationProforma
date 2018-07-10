@@ -7,7 +7,6 @@
     {
       while (false !== ($entry = readdir($handle))) 
       {
-        echo "hi";
         if ($entry != "." && $entry != ".." && strstr($entry, '.pdf')) //!strstr($entry,'.php') && !strstr($entry,'.zip')) 
         {
             $zip->addFile($entry);
@@ -18,7 +17,7 @@
 
     $zip->close();
 
-   header('Content-Type: application/zip');
+    header('Content-Type: application/zip');
     //header('Content-Length: ' . filesize($zipname));
     //header("Content-Disposition: attachment; filename= $zipname");
     header("Location: $zipname");
