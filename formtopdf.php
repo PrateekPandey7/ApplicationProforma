@@ -2,26 +2,29 @@
 require('fpdf/fpdf.php');
 class PDF extends FPDF
 {
-
-	function Header()
-	{
-	    $this->Image('npc.jpg',10,6,30);
-	    $this->SetFont('Arial','B',15);
-	    $this->Cell(65);
-	    $this->Cell(80,10,'Application Proforma',1,0,'C');
-	    $this->Ln(20);
-	}
-
 }
 
 $pdf = new PDF('P','mm',array(300,300));
 $pdf->AddPage();
+$pdf->SetFont('Arial','B',15);
+$pdf->Cell(300,10,'NATIONAL PRODUCTIVITY COUNCIL',0,2,'C');
+$pdf->Ln(3);
+$pdf->Cell(300,10,'APPLICATION PROFORMA',0,2,'C');
+$pdf->Ln(3);
+$pdf->Cell(300,10,'FOR',0,2,'C');
+$pdf->Ln(3);
+$pdf->Cell(300,10,'Empanelment of Consultants, Experts and Trainers',0,1,'C');
 $name = "uploads/".$_POST["name"].'('.$_POST["dob"].')'."(Photo).".$imageFileType;
 
-//Photo
-$pdf->Image($name,250,30,30);
-$pdf->Ln(10);
 
+$pdf->SetFont('Arial','B',18);
+$pdf->Ln(30);
+$pdf->Cell(100,10,'PERSONAL DETAILS',1,0,'C');
+$pdf->Ln(2);
+
+//Photo
+$pdf->Image($name,250,100,30);
+$pdf->Ln(10);
 //Name
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,50,'Name :');
@@ -93,6 +96,10 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$_POST['mobile']);
 $pdf->Ln(10);
 
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',18);
+$pdf->Cell(100,10,'EDUCATIONAL DETAILS',1,0,'C');
+$pdf->Ln(2);
 //Education
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,50,'Education :');
@@ -201,18 +208,15 @@ $pdf->Ln(20);
 //KeySkills
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(50,50,'KeySkills :');
-$pdf->Ln(10);
+$pdf->Ln(8);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$_POST['skill']);
 $pdf->Ln(10);
 
-
-//Experience
-$pdf->SetFont('Arial','B',14);
-$pdf->Cell(50,50,'Experience :');
-$pdf->Ln(10);
-$pdf->SetFont('Arial','B',12);
-$pdf->Ln(10);
+$pdf->SetFont('Arial','B',18);
+$pdf->Ln(30);
+$pdf->Cell(100,10,'PREVIOUS EXPERIENCE',1,0,'C');
+$pdf->Ln(2);
 
 //Experience1
 $pdf->SetFont('Arial','',10);
@@ -315,12 +319,10 @@ $pdf->Cell(50,50,'Salary/Month');
 $pdf->Cell(100,50,$_POST['pet56']);
 $pdf->Ln(10);
 
-//Publication
-$pdf->SetFont('Arial','B',14);
-$pdf->Cell(50,50,'Publication :');
-$pdf->Ln(10);
-$pdf->SetFont('Arial','B',12);
-$pdf->Ln(10);
+$pdf->SetFont('Arial','B',18);
+$pdf->Ln(50);
+$pdf->Cell(100,10,'PUBLICATIONS',1,0,'C');
+$pdf->Ln(2);
 
 //Publication1
 $pdf->SetFont('Arial','',10);
