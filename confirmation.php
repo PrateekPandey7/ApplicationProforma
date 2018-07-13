@@ -32,7 +32,7 @@
 				<br><br>
 				<p>Dear <?php echo $arr1[0] ?>,</p>
 				<p>Thank you for applying for <strong>"Empanelment of Consultants, Experts & Trainers"</strong>. </p>
-				<p>Please, keep your provided contact number and Email id active for further information. We will get back to you very soon.</p>
+				<p>Please, keep your provided contact number and Email Id active for further information. We will get back to you very soon.</p>
 				<div class="wrapper">
   					<span class="square individual">
   					You can download your PDF form from the link  

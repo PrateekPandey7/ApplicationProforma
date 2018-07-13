@@ -94,3 +94,15 @@ a:link, a:visited, a:hover, a:active
     text-decoration: none;
     display: inline-block;
 }
+
+.download
+{
+	font-size: 24px;
+}
+
+.download a
+{
+	color: black;
+	background-color: #f44336;
+	padding: 5px;
+}

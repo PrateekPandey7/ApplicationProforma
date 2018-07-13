@@ -24,25 +24,31 @@
 			<p class = "heading3">Control Panel</p>
 		</div>
 
+		<br><br><br>
+		<center>
 		<div class = "information">
 			<div class = "value">
-				<div class="wrapper">
+				<div class="wrapper download">
   					<span class="square individual">
-    				<a class = "link" href="logout.php">Logout</a>
+  					To download the <strong>Summary Report</strong> of all Applications, please 
+    				<a class = "link" href="../Empanelment.csv" target = '_blank'>Click Here</a>
   					</span>
 				</div>
-				<div class="wrapper">
+				<div class="wrapper download">
   					<span class="square individual">
-    				<a class = "link" href="../ApplicationProforma.csv" target = '_blank'>Download Excel File</a>
+  					To download filled <strong>Application Forms</strong> of all participants, please
+    				<a class = "link" href="../Application/zip_folders.php">Click Here</a>
   					</span>
 				</div>
-				<div class="wrapper">
+				<div class="wrapper download">
   					<span class="square individual">
-    				<a class = "link" href="../Application/zip_folders.php">Download All Reports</a>
+  					To Logout, please
+    				<a class = "link" href="logout.php">Click Here</a>
   					</span>
-				</div>	
+				</div>
 			</div>
 		</div>
+		</center>
 
 	</body>
 

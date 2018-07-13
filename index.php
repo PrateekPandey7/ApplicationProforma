@@ -52,7 +52,7 @@
 								</tr>
 								<tr>
 									<th>Gender<span style="color:red">  *</span></th>
-									<td><select id = "gender"><option value = "Male">Male</option><option value = "Female">Female</option><option value = "Others">Others</option></select></td>
+									<td><select id = "gender" name = "gender"><option value = "Male">Male</option><option value = "Female">Female</option><option value = "Others">Others</option></select></td>
 								</tr>
 								<tr>
 									<th>Nationality<span style="color:red">  *</span></th>

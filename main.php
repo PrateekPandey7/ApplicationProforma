@@ -209,6 +209,10 @@ if(isset($_POST["submit"]))
     {
       $nationality = clean_text($_POST["nationality"]);
     }
+    if(!empty($_POST["gender"]))
+    {
+      $gender = clean_text($_POST["gender"]);
+    }
 
 
 
@@ -227,20 +231,51 @@ if(isset($_POST["submit"]))
   {
       include 'PhotoUpload.php';
   }
-	
+	if(file_exists("Empanelment.csv") == 0)
+  {
+    $file_open = fopen("Empanelment.csv","a");
+    $form_data = array(
+      'name' => 'Name',
+      'fname' => 'Fathes Name',
+      'dob' => 'DoB',
+      'gender' => 'Gender',
+      'nationality' => 'Nationality',
+      'address' => 'Address',
+      'city' => 'City',
+      'state' => 'State',
+      'pincode' => 'PinCode',
+      'contact' => 'Contact No.',
+      'email' => 'Email',
+      'mobile' => 'Mobile No.',
+      'education' => 'Education',
+      'computer' => 'Computer Proficiency',
+      'keyskill' => 'Key SKills',
+      'experience' => 'Experience',
+      'totalexperience' => 'Total Experience',
+      'publications' => 'Publications',
+      'details' => 'Other Information',
+      'division' => 'Division (First Preference)',
+      'division2' => 'Division (Second/Third Preference)',
+      'location' => 'Location (First Preference)',
+      'location2' => 'Location (Second/Third Preference)',
+      'date' => 'Date',
+      'place' => 'Place',
+    );
+    fputcsv($file_open,$form_data);
+  }
 	if($error == '' && $flag == 0)
 	{
     
-		$file_open = fopen("ApplicationProforma.csv", "a");
-		$file_open1 = fopen("Report.csv","a");
-		$no_rows1 = count(file("Report.csv"));
-    $no_rows = count(file("ApplicationProforma.csv"));
+		$file_open = fopen("Empanelment.csv", "a");
+		/*$file_open1 = fopen("Report.csv","a");
+		$no_rows1 = count(file("Report.csv"));*/
+    $no_rows = count(file("Empanelment.csv"));
 		$form_data = array(
-			'sr_no' => $no_rows1,
 			'name' => $name,
 			'fname' => $fname,
-      'nationality' => $nationality,
 			'dob' => $dob,
+      'gender' => $gender,
+      'nationality' => $nationality,
 			'address' => $address,
 			'city' => $city,
 			'state' => $state,
@@ -262,7 +297,7 @@ if(isset($_POST["submit"]))
       'date' => $date,
       'place' => $place,
 			);
-		$form_data1 = array(
+		/*$form_data1 = array(
 			's_no' => $no_rows1,
 			'name' => $name,
 			'education' => $heducation,
@@ -273,7 +308,7 @@ if(isset($_POST["submit"]))
       'place' => $place,
 						);
 		//include 'ReportLocationWise.php';
-		fputcsv($file_open1,$form_data1);
+		fputcsv($file_open1,$form_data1);*/
 		fputcsv($file_open, $form_data);
 		include 'formtopdf.php';
     $stringfile = 'Application/'.$_POST["name"].'('.$_POST["dob"].').pdf';
