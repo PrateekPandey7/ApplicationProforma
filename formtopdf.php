@@ -7,13 +7,13 @@ class PDF extends FPDF
 $pdf = new PDF('P','mm',array(300,300));
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',15);
-$pdf->Cell(300,10,'NATIONAL PRODUCTIVITY COUNCIL',0,2,'C');
+$pdf->Cell(300,5,'NATIONAL PRODUCTIVITY COUNCIL',0,2,'C');
 $pdf->Ln(3);
-$pdf->Cell(300,10,'APPLICATION PROFORMA',0,2,'C');
+$pdf->Cell(300,5,'APPLICATION PROFORMA',0,2,'C');
 $pdf->Ln(3);
-$pdf->Cell(300,10,'FOR',0,2,'C');
+$pdf->Cell(300,5,'FOR',0,2,'C');
 $pdf->Ln(3);
-$pdf->Cell(300,10,'Empanelment of Consultants, Experts and Trainers',0,1,'C');
+$pdf->Cell(300,5,'Empanelment of Consultants, Experts and Trainers',0,1,'C');
 $name = "uploads/".$_POST["name"].'('.$_POST["dob"].')'."(Photo).".$imageFileType;
 
 
@@ -573,8 +573,13 @@ $pdf->Cell(50,50,'Location :');
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$string);
 $pdf->Ln(10);
-$pdf->Ln(50);
-$pdf->MultiCell(270,7,"I hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions provided in the Online Application Proforma and NPC Website and understood them. I agree to those terms and conditions.",0,'L',false);
+
+$pdf->SetFont('Arial','B',15);
+$pdf->Ln(30);
+$pdf->Cell(100,10,'Terms and Conditions as specified in the Online Application Proforma/ related notification on NPC website');
+$pdf->Ln(15);
+$pdf->SetFont('Arial','',12);
+$pdf->MultiCell(270,7,"I hereby verify that the information provided by me above is true and correct and my application can be summarily rejected if it is found incorrect. I shall further be liable to other legal action. Further, I have read through the terms and conditions and understood them. I agree to those terms and conditions.",0,'L',false);
 
 //Place
 $pdf->SetFont('Arial','B',14);
