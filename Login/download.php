@@ -20,6 +20,8 @@
 			<img src = "../npc.jpg">
 			<p class = "heading1"><strong>National Productivity Council</strong><p>
 			<p class = "subh1">(Under Department of Industrial Policy & Promotion Ministry of Commerce & Industry, Govt. of India)</p>
+			<p class = "heading2">APPLICATION PROFORMA FOR EMPANELMENT OF CONSULTANTS, EXPERTS & TRAINERS</p>
+			<p class = "heading3">Control Panel</p>
 		</div>
 
 		<div class = "information">

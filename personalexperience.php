@@ -106,7 +106,7 @@ if(empty($_POST["pet11"]))
     $totalyear = $years1+$years2+$years3+$years4+$years5;
     $totalmonth = $months1+$months2+$months3+$months4+$months5;
     if($totalmonth > 12)
-      $totalyear = $totalyear + ($totalmonth/12);
-    $totalmonth = $totalmonth%12;
+      $totalyear = $totalyear + (int)($totalmonth/12);
+    $totalmonth = (int)($totalmonth%12);
     $totalexperience = $totalyear."years-".$totalmonth."months";
     ?>

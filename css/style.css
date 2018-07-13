@@ -167,6 +167,7 @@ input[type = "submit"]
 	border: 0px;
 	cursor: pointer;
 	box-shadow: 10px 10px;
+	text-align: center;
 }
 
 input[type = "submit"]:hover
@@ -206,6 +207,7 @@ input[type = "submit"]:hover
 }
 
 
+
 input[type= "text"]
 {
 	margin-left: 20px;
@@ -214,8 +216,10 @@ input[type= "text"]
 
 input[type = "textarea"]
 {
+	padding-top: 0px;
+	padding-left: 0px;
 	width: 1200px;
-	height: 100px;
+	height: 55px;
 }
 
 select
@@ -233,12 +237,13 @@ input,textarea,select
 	font-size: 18px;
 	border-radius: 5px;
 	border: 1px solid grey;
-	text-align: center;
 }
+
+
 
 textarea
 {
-	width: 325px;
+	width: 1000px;
 }
 
 .button
