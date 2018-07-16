@@ -36,7 +36,7 @@
 				</div>
 				<div class="wrapper download">
   					<span class="square individual">
-  					2) To download filled <strong>Application Forms</strong> of all participants, please
+  					2) To download filled <strong>Application Forms</strong> of all Applicants, please
     				<a class = "link" href="../Application/zip_folders.php">Click Here</a>
   					</span>
 				</div>
